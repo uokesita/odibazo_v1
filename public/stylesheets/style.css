@@ -1,0 +1,67 @@
+body {
+  background: url('/images/bg_main.gif');
+  margin: 0 auto;
+}
+.clear { clear: both}
+#logo {
+  background: url('/images/logo.png') no-repeat;
+  height: 35px;
+  width: 355px;
+  margin: 55px 0 0 0;
+  padding:65px 0 0 88px;
+}
+#logo p {
+    font-size:0.5em;
+}
+#menu {
+  list-style:none;
+  margin:15px 0 0 148px;
+  float:left;
+}
+#menu li {
+  margin:5px 0;
+}
+#menu li a {
+  color:#000000;
+  font-size:12px;
+  text-decoration:none;
+}
+#section {
+  background:url("/images/bg_section.png") no-repeat scroll 0 0 transparent;
+  float:left;
+  height:483px;
+  margin:0 0 0 285px;
+  position:fixed;
+  width:979px;
+}
+ul.bio {
+  list-style: none;
+  float:left;
+  width:150px;
+  margin:60px 0 0 90px;
+}
+.bio li {
+  font-size: 14px
+}
+#button {
+  background:none repeat scroll 0 0 #FFFF00;
+  margin:40px 0 0 127px;
+  padding:7px 10px;
+  width:115px;
+}
+#button a{
+  color:#000000;
+  font-size:14px;
+  font-weight:bold;
+  text-decoration:none;
+}
+#info {
+  margin: 0 0 0 127px;
+}
+#info a {
+  color: #000;
+  text-decoration:none;
+}
+#info a:hover {
+  text-decoration: underline;
+}
