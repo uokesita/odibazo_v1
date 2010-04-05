@@ -10,11 +10,11 @@ helpers do
   end
 end
 
-def getPhotos
+def getPhotos(type)
   @photo = []
   
   flickr = Flickr.new(File.join('config', 'flickr.yml')) 
-  flickr.photos.search(:user_id => "11807027@N03", :tags=>'PRINT').each do |o|
+  flickr.photos.search(:user_id => "11807027@N03", :tags=>type).each do |o|
     @photo << [:title => o.title, :url => o.url]
   end
 end
@@ -28,11 +28,11 @@ get '/bio' do
 end
 
 get '/photo' do
-  partial :photo
+  haml :photo
 end
 
 get '/print' do
-  partial :print
+  haml :print
 end
 
 get '/paint' do
@@ -40,5 +40,5 @@ get '/paint' do
 end
 
 get '/video' do
-  partial :video
+  haml :video
 end
