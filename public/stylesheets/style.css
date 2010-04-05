@@ -1,13 +1,17 @@
 body {
-  background: url('/images/bg_main.gif');
-  margin: 0 auto;
+  margin:0 auto;
+  width:1135px;
+}
+#wrapper {
+  background:url("/images/bg.png") no-repeat scroll 0 0 transparent;
+  height:658px;
+  width:1135px;
 }
 .clear { clear: both}
 #logo {
   background: url('/images/logo.png') no-repeat;
   height: 35px;
   width: 355px;
-  margin: 55px 0 0 0;
   padding:65px 0 0 88px;
 }
 #logo p {
@@ -30,7 +34,7 @@ body {
   background:url("/images/bg_section.png") no-repeat scroll 0 0 transparent;
   float:left;
   height:483px;
-  margin:0 0 0 285px;
+  margin:0 0 0 225px;
   position:fixed;
   width:979px;
 }

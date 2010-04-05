@@ -24,7 +24,7 @@ get '/' do
 end
 
 get '/bio' do
-  haml :index
+  haml :bio
 end
 
 get '/photo' do

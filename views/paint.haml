@@ -1,12 +1,13 @@
 - getPhotos('PAINT')
  
-%div{ :id=>"galle"}
-  %div{ :id=>"photos", :class=>"galleryview"}
-    - @photo.each do |p|
-      %div{ :class=>"panel"}
-        #image
-          %img{ :src=>"#{p[0][:url]}"}        
-    %ul{ :class=>"filmstrip"}
+#section
+  %div{ :id=>"galle"}
+    %div{ :id=>"photos", :class=>"galleryview"}
       - @photo.each do |p|
-        %li
-          %img{ :src=>"#{p[0][:url]}", :alt=>"Effet du soleil", :title=>"Effet du soleil", :style=>"height:50px; width:50px;"}
+        %div{ :class=>"panel"}
+          #image
+            %img{ :src=>"#{p[0][:url]}", :style=>"max-height:310px;"}        
+      %ul{ :class=>"filmstrip"}
+        - @photo.each do |p|
+          %li
+            %img{ :src=>"#{p[0][:url]}", :alt=>"Effet du soleil", :title=>"Effet du soleil", :style=>"height:50px; width:50px;"}
