@@ -5,8 +5,17 @@ require 'flickr_fu'
 
 
 helpers do
-  def partial(page, options={})
-    erb page, options.merge!(:layout => false)
+  def partial(template, options={})
+    erb(template, options.merge!(:layout=> :'layout'))
+  end
+end
+
+def getPhotos
+  @photo = []
+  
+  flickr = Flickr.new(File.join('config', 'flickr.yml')) 
+  flickr.photos.search(:user_id => "11807027@N03", :tags=>'PRINT').each do |o|
+    @photo << [:title => o.title, :url => o.url]
   end
 end
 
@@ -27,7 +36,7 @@ get '/print' do
 end
 
 get '/paint' do
-  partial :paint
+  haml :paint
 end
 
 get '/video' do
