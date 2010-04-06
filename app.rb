@@ -19,6 +19,7 @@ def getPhotos(type)
   end
 end
 
+
 get '/' do
   haml :index
 end
