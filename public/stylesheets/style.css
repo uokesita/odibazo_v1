@@ -77,6 +77,4 @@ ul.bio {
 
 #image { margin: 0 auto; text-align:center}
 
-#section #galle #photos {}
-#section #galle #photos.galleruview {}
-#section #galle .galleryview {}
+#image a img{ border: 0 none}

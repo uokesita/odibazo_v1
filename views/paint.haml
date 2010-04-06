@@ -6,7 +6,8 @@
       - @photo.each do |p|
         %div{ :class=>"panel"}
           #image
-            %img{ :src=>"#{p[0][:url]}", :style=>"max-height:310px;"}        
+            %a{ :href=>"http://www.flickr.com/photos/odibazo/#{p[0][:id]}", :target=>"_blank"}
+              %img{ :src=>"#{p[0][:url]}", :style=>"max-height:310px;"}    
       %ul{ :class=>"filmstrip"}
         - @photo.each do |p|
           %li
