@@ -4,7 +4,7 @@ body {
   background: url("/images/fondo2.png")
 }
 #wrapper {
-  background:url("/images/triangle.png") no-repeat scroll 0 0 transparent;
+  background:url("/images/triangle.png") no-repeat scroll 0 -3px transparent;
   height:658px;
   width:1135px;
 }
