@@ -15,7 +15,7 @@ def getPhotos(type)
   
   flickr = Flickr.new(File.join('config', 'flickr.yml')) 
   flickr.photos.search(:user_id => "11807027@N03", :tags=>type).each do |o|
-    @photo << [:id => o.id, :title => o.title, :url => o.url]
+    @photo << [:id => o.id, :title => o.title,  :url => o.url, :urls => o.url(:thumbnail), :urlo => o.url(:original)]
   end
 end
 

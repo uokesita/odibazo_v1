@@ -6,9 +6,5 @@
       - @photo.each do |p|
         %div{ :class=>"panel"}
           #image
-            %a{ :href=>"http://www.flickr.com/photos/odibazo/#{p[0][:id]}", :target=>"_blank"}
-              %img{ :src=>"#{p[0][:url]}", :style=>"max-height:310px;"}    
-      %ul{ :class=>"filmstrip"}
-        - @photo.each do |p|
-          %li
-            %img{ :src=>"#{p[0][:url]}", :alt=>"Odi Bazó", :title=>"Odi Bazó", :style=>"height:50px; width:50px;"}
+            %a{ :href=>"#{p[0][:url]}", :rel=>"lightbox-set"}
+              %img{ :src=>"#{p[0][:urls]}"}

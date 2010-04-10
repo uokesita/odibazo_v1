@@ -32,12 +32,12 @@ body {
   text-decoration:none;
 }
 #section {
-  background:url("/images/bg_section.png") no-repeat scroll 0 0 transparent;
+  background:none repeat scroll 0 0 #FFFFFF;
   float:left;
-  height:483px;
-  margin:0 0 0 225px;
-  position:fixed;
-  width:979px;
+  margin:0 35px;
+  min-height:380px;
+  padding:35px 0;
+  width:700px;
 }
 ul.bio {
   list-style: none;
@@ -72,9 +72,19 @@ ul.bio {
 }
 
 #galle {
-  margin: 5px 75px
+  margin: 5px 20px
 }
 
 #image { margin: 0 auto; text-align:center}
-
-#image a img{ border: 0 none}
+.panel {
+  width:90px;
+  float:left;
+  margin:20px;
+  height:100px
+}
+.panel2{
+  margin:20px 0px
+}
+#image a img{
+  border: 0 none;
+}
