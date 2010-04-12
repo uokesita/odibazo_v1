@@ -143,3 +143,14 @@ ul.bio {
 #phone {
   background: url(/images/links2_12.gif) no-repeat
 }
+#cv {
+  margin:190px 109px;
+  position:absolute; 
+}
+#linkcv {
+  background:url("/images/download.gif") no-repeat scroll 0 0 transparent;
+  height:30px;
+  display:block;
+  line-height:0px;
+  width:150px
+}
