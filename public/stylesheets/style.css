@@ -88,3 +88,58 @@ ul.bio {
 #image a img{
   border: 0 none;
 }
+#bio {
+  background: url(/images/bg_sectionIndex.png) no-repeat;
+  width:795p;
+  height: 390px;
+  margin: 0 0 0 235px
+}
+
+.link {
+  display:block;
+  height:10px;
+  line-height:0;
+  width:235px;
+}
+#links {
+  margin:265px 109px;
+  position:absolute;
+}
+#linkmail {
+  background: url(/images/links2_03.gif) no-repeat
+}
+#linkmail:hover {
+  background: url(/images/links_03.gif) no-repeat
+}
+
+#linkpage {
+  background: url(/images/links2_07.gif) no-repeat
+}
+#linkpage:hover {
+  background: url(/images/links_07.gif) no-repeat
+}
+
+#linkflickr {
+  background: url(/images/links2_08.gif) no-repeat
+}
+#linkflickr:hover {
+  background: url(/images/links_08.gif) no-repeat
+}
+
+#linkyou {
+  background: url(/images/links2_09.gif) no-repeat
+}
+#linkyou:hover {
+  background: url(/images/links_09.gif) no-repeat
+}
+
+#linktumb {
+  background: url(/images/links2_10.gif) no-repeat
+}
+#linktumb:hover {
+  background: url(/images/links_10.gif) no-repeat
+}
+
+#phone {
+  background: url(/images/links2_12.gif) no-repeat
+}
